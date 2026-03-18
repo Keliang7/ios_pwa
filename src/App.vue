@@ -7,9 +7,9 @@ const title = import.meta.env.VITE_APP_TITLE;
     <div class="content">
       <div>环境：{{ title }}</div>
     </div>
-    <div class="tab-bar safe-bottom">
+    <!-- <div class="tab-bar safe-bottom">
       <div class="inner">h5底部安全高度</div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -18,7 +18,7 @@ const title = import.meta.env.VITE_APP_TITLE;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  height: 100vh;
+  height: 100%;
   padding-top: constant(safe-area-inset-top); /* iOS */
   padding-top: env(safe-area-inset-top); /* Android */
   padding-bottom: constant(safe-area-inset-bottom); /* iOS */
